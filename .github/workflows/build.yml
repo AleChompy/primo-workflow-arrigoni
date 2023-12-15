@@ -1,6 +1,9 @@
 name: Build 
 on: 
     workflow_dispatch:
+        inputs: 
+            branch:
+                description: "inserisci il nome della branch"
 jobs:
     build:
       runs-on: windows-latest
