@@ -11,6 +11,9 @@ on: push
           uses: actions/setup-node@v3
           with:
             node-version: 18.x
+
+        - name: install npm 
+        - run: npm install  
       
-        - name: Execute build
-        - run: npm run build 
+        - name: Execute with npm 
+        - run: npm run build
